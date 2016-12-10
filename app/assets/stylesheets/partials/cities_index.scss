@@ -1,0 +1,56 @@
+.cities-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cities-index {
+  max-width: 1020px;
+  width: 100%;
+
+  &:hover {
+    // transition: all 60s;
+    // transition-timing-function: ease-in-out;
+    // transform: scale(1.2) rotate(9999999999999deg);
+  }
+}
+
+.city-index-item {
+  display: inline-block;
+  width: 400px;
+  height: 200px;
+  width: 30%;
+  margin: 1.5%;
+
+}
+
+.city-pic {
+  color: white;
+  height: 200px;
+  font-size: 30px;
+  text-align: center;
+  border-radius: 10px;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.6s;
+    transform: scale(1.1);
+  }
+}
+
+.above-cities {
+  display: flex;
+  justify-content: space-around;
+}
+
+.where-header {
+  font-size: 2.5em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 9px;
+  color: $grayish-color;
+}
+
+.where-sentence {
+  text-align: center;
+  margin: 0 0 0.8125em;
+}

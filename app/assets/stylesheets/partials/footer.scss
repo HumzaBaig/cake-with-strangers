@@ -1,0 +1,33 @@
+footer {
+  background-color: $primary-color;
+  color: $primary-font-color;
+  padding: 2em 0;
+}
+
+.footer-container {
+  float: left;
+  display: flex;
+  justify-content: space-between;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin-right: 2.84259%;
+  width: 28.01019%;
+  text-align: left;
+  font-weight: 700;
+  font-family: $font-family;
+  margin-bottom: 1.5em;
+}
+
+.footer-link {
+  padding: 0 1em;
+}
+
+.ethos-rant {
+  width: 69.14722%;
+  margin-right: 0;
+}

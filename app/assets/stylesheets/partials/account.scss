@@ -1,0 +1,73 @@
+.dashboard {
+  display: flex;
+}
+
+.hello:last-child {
+  margin-right: 0;
+}
+
+.sidebar-section {
+  margin-bottom: 1em;
+  overflow: auto;
+}
+
+.dash-body:last-child {
+  margin-right: 0;
+  width: 74.41059%;
+}
+
+.dash-body {
+  margin-bottom: 3em;
+}
+
+.form {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+
+  .first {
+    margin-bottom: 2em;
+  }
+
+  .form-subheader {
+    border-top: 0;
+    background-color: white;
+    border-bottom: 1px solid $tertiary-color;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  label {
+    margin-bottom: 0.5em;
+    line-height: 1.25;
+    font-size: 0.8em;
+  }
+
+  input[type="text"] {
+    margin: 0 0 1em;
+  }
+
+  input {
+    padding: 1em;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid #DDD;
+  }
+}
+
+.split-container {
+  display: flex;
+}
+
+.field.split2 {
+  margin: 0;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+}
+
+.form-label {
+  margin-bottom: 0.5em;
+  line-height: 1.25;
+  clear: both;
+}
