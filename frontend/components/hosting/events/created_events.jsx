@@ -1,6 +1,6 @@
 import React from 'react';
 import { allEvents } from '../../../reducers/selectors';
-import EventDetail from './event_detail';
+import EventDetailContainer from './event_detail_container';
 
 class CreatedEvents extends React.Component {
   constructor(props) {
@@ -13,13 +13,16 @@ class CreatedEvents extends React.Component {
   }
 
   makeEventsIntoArray() {
+    let eventIds = {};
+    this.props.currentUser.attendances.forEach(attendance => eventIds[attendance.event_id] = true);
+
     if (this.props.events[1] !== "not fetched yet") {
       const eventElements = allEvents(this.props.events).map( (evt, idx) => (
-        <EventDetail evt={evt} key={idx} />
+        <EventDetailContainer evt={evt} eventIds={eventIds} key={idx} created={true}/>
         ));
       return eventElements;
     } else {
-      return (<div>loading..</div>);
+      return (<div>You haven't hosted any events yet!</div>);
     }
   }
 

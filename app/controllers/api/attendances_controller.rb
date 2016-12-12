@@ -10,6 +10,7 @@ class Api::AttendancesController < ApplicationController
   end
 
   def destroy
+    debugger
     @attendance = Attendance.find_by(attendee_id: current_user.id, event_id: params[:id])
     @attendance.destroy
     render json: {}

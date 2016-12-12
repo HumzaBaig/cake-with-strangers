@@ -31,10 +31,3 @@ export const subtractAttendance = (eventId, success) => {
     success
   });
 };
-
-export const requestAttendedEvents = (success) => {
-  $.ajax({
-    url: 'api/attendances',
-    success
-  });
-}

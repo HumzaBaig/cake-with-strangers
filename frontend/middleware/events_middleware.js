@@ -23,6 +23,7 @@ const EventsMiddleware = ({ getState, dispatch }) => next => action => {
       requestEvents(action.key, action.value, fetchEventsSuccessCB);
       return next(action);
     case ATTEND_EVENT:
+      debugger;
       addAttendance(action.data, attendanceSuccessCB);
       return next(action);
     case UNATTEND_EVENT:

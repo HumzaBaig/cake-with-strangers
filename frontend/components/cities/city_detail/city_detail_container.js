@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { updateUser } from '../../../actions/account_actions';
+import { fetchEvents } from '../../../actions/event_actions';
 import CityDetail from './city_detail';
 
 const mapStateToProps = state => ({
@@ -11,7 +12,8 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  updateUser: (user) => dispatch(updateUser(user, undefined))
+  updateUser: user => dispatch(updateUser(user, undefined)),
+  fetchEvents: (key, cityId) => dispatch(fetchEvents(key, cityId))
 });
 
 export default connect(

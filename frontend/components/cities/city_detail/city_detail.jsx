@@ -15,6 +15,10 @@ class CityDetail extends React.Component {
     this.eventElements = this.eventElements.bind(this);
   }
 
+  componentWillMount() {
+    this.props.fetchEvents("city_id", this.props.city.id);
+  }
+
   handleClick(e) {
     e.preventDefault();
     const user = this.props.currentUser;

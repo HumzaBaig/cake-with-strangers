@@ -4,17 +4,38 @@ class EventDetail extends React.Component {
   constructor(props) {
     super(props);
     this.returnButton = this.returnButton.bind(this);
-    const eventId = this.props.eventIds[this.props.evt.id];
+    this.handleAttend = this.handleAttend.bind(this);
+    this.handleUnattend = this.handleUnattend.bind(this);
+    this.eventId = this.props.eventIds[this.props.evt.id];
+    this.state = {
+      event_id: this.props.evt.id,
+      attendee_id: this.props.currentUser.id
+    };
+  }
+
+  handleAttend(e) {
+    e.preventDefault();
+    debugger;
+    this.props.attendEvent(this.state);
+  }
+
+  handleUnattend(e) {
+    e.preventDefault();
+    this.props.unattendEvent(this.props.evt.id);
   }
 
   returnButton() {
-    if (eventId) {
+    if (this.props.created) {
+      //no button
+    } else if (this.eventId) {
       return (
-        <button onClick={eventId => this.props.unattendEvent}>I changed my mind..</button>
+        <button onClick={this.handleUnattend}>
+          I changed my mind..
+        </button>
       );
     } else {
       return (
-        <button onClick={{event_id: eventId, attendee_id: this.props.currentUser.id} => this.props.attendEvent}>
+        <button onClick={this.handleAttend}>
           Save me a seat!
         </button>
       );

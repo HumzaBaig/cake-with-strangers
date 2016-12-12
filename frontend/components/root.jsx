@@ -11,7 +11,7 @@ import DashboardContainer from './dashboard/dashboard_container';
 import About from './about';
 
 import { fetchCities, fetchCity } from '../actions/cities_actions';
-import { fetchAttendedEvents } from '../actions/event_actions';
+import { fetchEvents } from '../actions/event_actions';
 
 
 const Root = ({ store }) => {
