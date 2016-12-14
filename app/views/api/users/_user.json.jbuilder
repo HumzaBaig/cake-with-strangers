@@ -1,1 +1,1 @@
-json.extract! user, :id, :username, :email, :fname, :lname, :city_id, :phone_number, :city, :is_host, :profile, :profile_pic_url, :hosted_events, :attendances, :attended_events
+json.extract! user, :id, :username, :email, :fname, :lname, :city_id, :phone_number, :city, :is_host, :profile, :profile_pic_url, :hosted_events, :attendances, :events

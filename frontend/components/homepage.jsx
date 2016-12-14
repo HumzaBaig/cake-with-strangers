@@ -3,7 +3,7 @@ import React from 'react';
 const Homepage = () => {
 
   return (
-    <div>
+    <div className= "light-background">
       <main className="homepage-outer-container">
         <div className="homepage-pic">
           <div className="pic-text-container">

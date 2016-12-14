@@ -9,7 +9,7 @@ const hostContainer = (currentUser) => {
 const HostPage = ({ session }) => {
 
   return (
-    <div className="container">
+    <div className="container light-background">
       <section className="host-container">
         <h2 className="host-header">Bro, let us come thru</h2>
           {hostContainer(session.currentUser)}

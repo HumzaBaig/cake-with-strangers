@@ -65,7 +65,7 @@ class CityDetail extends React.Component {
 
   render() {
     return(
-      <div className="city-details-page">
+      <div className="city-details-page light-background">
         <section className="center">
           <div className="city-detail-container">
             {this.loggedInButton()}

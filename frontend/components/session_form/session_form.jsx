@@ -102,36 +102,38 @@ class SessionForm extends React.Component {
 
 	render() {
 		return (
-			<div className="container session-form">
-				<div className="full-sign-up">
-					<h2 class="sign-up-header">Join to cake</h2>
-					<p className="sign-up-text">
-						Everybody learns from everybody.
-					</p>
-					<form className="sign-ups" onSubmit={this.handleSubmit}>
-						<label className="session-label">
-							<input type="text"
-								id="username"
-								placeholder="First name (or nickname)"
-								value={this.state.username}
-								onChange={this.update("username")}/>
-						</label>
-						{this.emailInput()}
-						<label className="session-label">
-							<input type="password"
-								id="password"
-								placeholder="Password (at least 6 characters you won't forget!)"
-								value={this.state.password}
-								onChange={this.update("password")}/>
-						</label>
-						<input className="submit-button" type="submit" value="Lets Get Cake" />
-					</form>
-					<button className="submit-button"
-									id="demo-form-button"
-									onClick={this.startUsernameAnimation}
-									>Guest Login</button>
-					<div className="alternate">
-						{this.navLink()}
+			<div className="light-background">
+				<div className="container session-form">
+					<div className="full-sign-up">
+						<h2 class="sign-up-header">Join to cake</h2>
+						<p className="sign-up-text">
+							Everybody learns from everybody.
+						</p>
+						<form className="sign-ups" onSubmit={this.handleSubmit}>
+							<label className="session-label">
+								<input type="text"
+									id="username"
+									placeholder="First name (or nickname)"
+									value={this.state.username}
+									onChange={this.update("username")}/>
+							</label>
+							{this.emailInput()}
+							<label className="session-label">
+								<input type="password"
+									id="password"
+									placeholder="Password (at least 6 characters you won't forget!)"
+									value={this.state.password}
+									onChange={this.update("password")}/>
+							</label>
+							<input className="submit-button" type="submit" value="Lets Get Cake" />
+						</form>
+						<button className="submit-button"
+										id="demo-form-button"
+										onClick={this.startUsernameAnimation}
+										>Guest Login</button>
+						<div className="alternate">
+							{this.navLink()}
+						</div>
 					</div>
 				</div>
 			</div>

@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
            primary_key: :id,
            foreign_key: :attendee_id,
            class_name: :Attendance
-  has_many :attended_events, through: :attendances
+  has_many :events, through: :attendances
 
   after_initialize :ensure_session_token
 

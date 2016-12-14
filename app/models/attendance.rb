@@ -20,6 +20,7 @@ class Attendance < ActiveRecord::Base
              foreign_key: :attendee_id,
              class_name: :User
 
+
   def number_of_attendees
     if self.event.limit <= Attendance.where(event_id: self.event_id).length
       self.errors[:event] << "Sorry, no more seats!"
