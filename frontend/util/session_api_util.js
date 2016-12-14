@@ -25,3 +25,10 @@ export const logout = (success) => {
     success
   });
 };
+
+export const requestUser = (userId, success) => {
+  $.ajax({
+    url: `api/users/${userId}`,
+    success
+  });
+};

@@ -1,7 +1,6 @@
 header {
   background-color: $primary-color;
   color: $primary-font-color;
-  border-bottom: solid white;
 
   .container {
     padding-top: 1em;
@@ -48,10 +47,25 @@ header {
   color: $primary-color;
   border: solid white;
   transition: all 0.26666666666s;
+  border-radius: 3px;
 
   &:hover {
     background-color: $primary-color;
     color: white;
+  }
+}
 
+.logo {
+  display: flex;
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+
+  h1 {
+    font-size: 25px;
+    font-family: $logo-font;
+    padding-top: -3px;
   }
 }

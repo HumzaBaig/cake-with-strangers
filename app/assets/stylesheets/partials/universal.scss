@@ -35,13 +35,13 @@ form input {
   margin: 0 0 0.8125em 0;
   padding: 1em;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: none;
   border: 1px solid #DDD;
 }
 
 button, input[type="submit"] {
-  border-radius: 3px;
+  border-radius: 10px;
   box-shadow: none;
   border: 1px solid #DDD;
   background-color: $secondary-color;

@@ -10,7 +10,9 @@ const App = ({ children }) => (
         <div className="header-contents">
           <div className="header-left">
             <Link to="/" className="logo">
-              LOGO
+              <img src="http://res.cloudinary.com/dzixj0ktk/image/upload/v1481664189/cake-triangular-piece-handmade-symbol_csrvqn.png" />
+              &nbsp;&nbsp;
+              <h1> Lets Get Cake!</h1>
             </Link>
           </div>
           <div className="header-right">

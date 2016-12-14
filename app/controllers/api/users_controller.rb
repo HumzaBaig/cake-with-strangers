@@ -9,6 +9,10 @@ class Api::UsersController < ApplicationController
     end
   end
 
+  def show
+    @user = current_user
+  end
+
   def update
     @user = User.find(params[:id])
     errors = [] # array for both profile and password updates

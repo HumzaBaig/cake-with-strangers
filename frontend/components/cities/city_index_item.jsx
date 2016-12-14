@@ -13,8 +13,9 @@ const CityIndexItem = ({ city }) => {
   return (
     <div className="city-index-item">
       <Link to={`/cities/${city.id}`}>
-        <div className="city-pic"
-              style={divStyle}><span className="city-name">{city.name}</span></div>
+        <div className="city-pic" style={divStyle}>
+          <span className="city-name">{city.name}</span>
+        </div>
       </Link>
     </div>
   );

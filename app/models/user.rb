@@ -28,7 +28,7 @@ class User < ActiveRecord::Base
   validates :email, format: /@/
 
   belongs_to :city
-  has_many :hostedEvents,
+  has_many :hosted_events,
             primary_key: :id,
             foreign_key: :host_id,
             class_name: :Event
@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
            primary_key: :id,
            foreign_key: :attendee_id,
            class_name: :Attendance
-  has_many :AttendedEvents, through: :attendances
+  has_many :attended_events, through: :attendances
 
   after_initialize :ensure_session_token
 

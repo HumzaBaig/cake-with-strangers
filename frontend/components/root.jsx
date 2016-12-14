@@ -8,6 +8,7 @@ import CitiesContainer from './cities/cities_container';
 import CityDetailContainer from './cities/city_detail/city_detail_container';
 import HostPageContainer from './hosting/host_page_container';
 import DashboardContainer from './dashboard/dashboard_container';
+import Homepage from './homepage';
 import About from './about';
 
 import { fetchCities, fetchCity } from '../actions/cities_actions';
@@ -35,6 +36,7 @@ const Root = ({ store }) => {
     <Provider store={store}>
       <Router history={hashHistory}>
         <Route path="/" component={App}>
+          <IndexRoute component={Homepage} />
           <Route path="/cities" component={CitiesContainer} onEnter={_requestCitiesOnEnter} />
           <Route path="/cities/:cityId" component={CityDetailContainer} onEnter={_requestCityOnEnter}/>
           <Route path="/login" component={SessionFormContainer} onEnter={_redirectIfLoggedIn} />

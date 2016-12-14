@@ -1,0 +1,212 @@
+.homepage-outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  color: $tertiary-font-color;
+}
+
+.homepage-pic {
+  background-image: url("http://res.cloudinary.com/dzixj0ktk/image/upload/b_rgb:f4845c,dn_150,o_55/v1481571235/cupcakes_lajcb1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.pic-text-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.homepage-head-main {
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: $font-family;
+  color: $primary-font-color;
+}
+
+.homepage-head-subtext {
+  font-size: 1.125em;
+  font-weight: 400;
+  font-family: $font-family;
+  color: $primary-font-color;
+}
+
+.colored {
+  background-color: $tertiary-color;
+  width: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin-bottom: 3em;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+}
+
+.homepage-subhead {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.middle-small {
+  margin-left: 11px;
+}
+
+#middle {
+  margin: auto 3em;
+}
+
+.medium-text {
+  font-size: 1.5em;
+  color: $secondary-font-color;
+  font-weight: 600;
+}
+
+.top-text-homepage {
+  color: $tertiary-font-color;
+  font-family: $font-family;
+  font-weight: 600;
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.25;
+}
+
+.homepage-inner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.image-text {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  margin: 2em 0;
+  padding: 0 2em;
+  padding-left: 3.75em;
+
+  img {
+    width: 38.29445%;
+    height: 38.2%;
+    margin: auto 2.84259%;
+  }
+}
+
+.deep {
+  width: 55%;
+}
+
+.centered-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto 70px;
+  margin-top: 5em;
+}
+
+.middle {
+  margin-top: 2.5em;
+  margin-bottom: 3em;
+}
+
+.middle-text {
+  margin-top: 0.5em;
+}
+
+.last-text {
+  margin-top: 2em;
+}
+
+.button-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28%;
+
+  span {
+    font-weight: 600;
+    font-size: 1.875em;
+  }
+}
+
+.homepage-button {
+  max-width: 540px;
+  text-transform: uppercase;
+  font-weight: 600;
+  width: 150%;
+  margin: 0 0 0.8125em 0;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid #DDD;
+  font-size: 18px;
+  color: $primary-font-color;
+}
+
+.button-container {
+  margin-top: 1.25em;
+  width: 200%
+}
+
+.special-colored {
+  background-color: $tertiary-color;
+  width: 100%;
+  padding-top: 1.25em;
+  padding-bottom: 1em;
+  margin-bottom: 3em;
+}
+
+.end {
+  margin-bottom: 0;
+}
+
+.reviews {
+  display: flex;
+  justify-content: space-around;
+
+  span {
+    color: $secondary-font-color;
+    font-weight: 600;
+  }
+}
+
+blockquote {
+  padding: 0.5em 3em 0.5em 0;
+  border-right: 1em solid $tertiary-color;
+  border-left: 0;
+  font-style: normal;
+  margin: 1.625em 0;
+}
+
+.lower {
+  img {
+    width: 38.29445%;
+    height: 38.2%;
+  }
+}
+
+.centered-column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin-left: 3em;
+}

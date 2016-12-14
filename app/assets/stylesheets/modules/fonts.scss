@@ -1,3 +1,8 @@
 $font-family: 'Signika Negative', 'sans-serif';
 
- 
+@font-face {
+  font-family: 'BlendaScript';
+  src: font-url('Blenda_Script.otf') format('truetype');
+}
+
+$logo-font: 'BlendaScript', 'serif';

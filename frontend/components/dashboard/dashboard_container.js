@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import Dashboard from './dashboard';
 
 const mapStateToProps = state => ({
-  events: state.events
+  hostedEvents: state.session.currentUser.hosted_events,
+  attendedEvents: state.session.currentUser.attended_events
 });
 
 export default connect(

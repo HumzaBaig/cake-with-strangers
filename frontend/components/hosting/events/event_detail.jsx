@@ -7,27 +7,35 @@ class EventDetail extends React.Component {
     this.handleAttend = this.handleAttend.bind(this);
     this.handleUnattend = this.handleUnattend.bind(this);
     this.eventId = this.props.eventIds[this.props.evt.id];
+    let attending;
+    if (this.eventId) {
+      attending = true;
+    } else {
+      attending = false;
+    }
     this.state = {
       event_id: this.props.evt.id,
-      attendee_id: this.props.currentUser.id
+      attendee_id: this.props.currentUser.id,
+      attending: attending
     };
   }
 
   handleAttend(e) {
     e.preventDefault();
-    debugger;
     this.props.attendEvent(this.state);
+    this.setState({attending: true});
   }
 
   handleUnattend(e) {
     e.preventDefault();
     this.props.unattendEvent(this.props.evt.id);
+    this.setState({attending: false});
   }
 
   returnButton() {
     if (this.props.created) {
       //no button
-    } else if (this.eventId) {
+    } else if (this.state.attending) {
       return (
         <button onClick={this.handleUnattend}>
           I changed my mind..
@@ -43,6 +51,7 @@ class EventDetail extends React.Component {
   }
 
   render() {
+    console.log(this.props);
       return (
         <section>
           <h3>{this.props.evt.date_and_time}</h3>
