@@ -1,12 +1,14 @@
 import { connect } from 'react-redux';
 import { updateUser } from '../../../actions/account_actions';
 import { fetchEvents } from '../../../actions/event_actions';
+import { allEvents } from '../../../reducers/selectors';
 import CityDetail from './city_detail';
 
 const mapStateToProps = state => ({
   city: state.currentCity,
   hosts: state.currentCity.hosts,
   events: state.currentCity.events,
+  eventsForHosts: allEvents(state.events),
   currentUser: state.session.currentUser,
   loggedIn: Boolean(state.session.currentUser)
 });

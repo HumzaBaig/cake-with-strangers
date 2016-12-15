@@ -29,6 +29,7 @@ const Root = ({ store }) => {
 
   const _requestCityOnEnter = nextState => {
     store.dispatch(fetchCity(nextState.params.cityId));
+    store.dispatch(fetchEvents('city_id', nextState.params.cityId));
   };
 
 

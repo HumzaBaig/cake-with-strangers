@@ -20,7 +20,7 @@ class Event < ActiveRecord::Base
   belongs_to :host,
              primary_key: :id,
              foreign_key: :host_id,
-             class_name: :City
+             class_name: :User
   has_many :attendances,
            primary_key: :id,
            foreign_key: :event_id,

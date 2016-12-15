@@ -15,10 +15,6 @@ class CityDetail extends React.Component {
     this.eventElements = this.eventElements.bind(this);
   }
 
-  componentWillMount() {
-    this.props.fetchEvents("city_id", this.props.city.id);
-  }
-
   handleClick(e) {
     e.preventDefault();
     const user = this.props.currentUser;
@@ -37,9 +33,21 @@ class CityDetail extends React.Component {
 
   eventElements() {
     let eventIds = {};
+    let hostUrls = {};
+    let hostNames = {};
+    if (this.props.eventsForHosts[0] !== "not fetched yet" && this.props.eventsForHosts.length !== 0) {
+      this.props.eventsForHosts.forEach(event => {
+        hostUrls[event.id] = event.host.profile_pic_url;
+        hostNames[event.id] = event.host.fname;
+      });
+    }
     this.props.currentUser.attendances.forEach(attendance => eventIds[attendance.event_id] = true);
     return (this.props.events.map( (evt, idx) => (
-      <EventDetailContainer evt={evt} eventIds={eventIds} key={idx} />
+      <EventDetailContainer hostNames={hostNames}
+                            hostUrls={hostUrls}
+                            evt={evt}
+                            eventIds={eventIds}
+                            key={idx} />
       )));
   }
 
@@ -64,6 +72,7 @@ class CityDetail extends React.Component {
   }
 
   render() {
+    console.log(this.props);
     return(
       <div className="city-details-page light-background">
         <section className="center">
