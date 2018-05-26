@@ -58,6 +58,14 @@ Since their are locations involved with this application, A google maps API inte
 
 Another API that is in future plans is the Yelp API for users to help users decide whether they would like the cake at the location of the event.
 
+### Live Chat
+
+A chat feature would be very convenient for the users in getting to know a little bit more about their hosts before actually meeting them up. For this task, Firebase seems to be the best for real-time responses, but more research is necessary before making a final decision.
+
+### Chat Bot
+
+After having implemented a live chat feature, the obvious next step is going to be to create a chat bot that will act as the hosts to give the feeling of someone actually replying. To make this more realistic, machine learning, natural language processing to be more specific, will be applied.
+
 ### Smart-Feature
 
 Through adding tags to the events, hosts, and cities tables, the web application will be able to see which tags represent you best, and recommend which events you might prefer.
