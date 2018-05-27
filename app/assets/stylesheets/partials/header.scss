@@ -16,6 +16,10 @@ header {
 .header-nav {
   display: flex;
   justify-content: space-between;
+
+  align-items: center;
+
+  height: 100%;
 }
 
 .header-link {
@@ -23,10 +27,9 @@ header {
   padding-left: 18px;
   line-height: 39px;
   text-align: right;
-  font-size: 0.8em;
+  font-size: 0.86em;
   text-transform: uppercase;
   font-weight: 600;
-  margin-bottom: 1px;
 
   &:hover {
     cursor: pointer;
@@ -34,12 +37,12 @@ header {
 }
 
 .header-button {
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 21px;
+  padding-right: 21px;
   margin-left: 18px;
   text-align: right;
   line-height: 26px;
-  font-size: 0.8em;
+  font-size: 0.85em;
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 1px;
@@ -48,6 +51,8 @@ header {
   border: solid white;
   transition: all 0.26666666666s;
   border-radius: 3px;
+
+  height: 92%;
 
   &:hover {
     background-color: $primary-color;
@@ -59,13 +64,8 @@ header {
   display: flex;
 
   img {
-    height: 30px;
-    width: 30px;
-  }
-
-  h1 {
-    font-size: 25px;
-    font-family: $logo-font;
-    padding-top: -3px;
+    height: 37px;
+    width: 175px;
+    transform: translateY(-2px);
   }
 }
