@@ -3,4 +3,10 @@
   src: font-url('Gibson-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Gibson Light';
+  src: font-url('GibsonLight-Regular.ttf') format('truetype');
+}
+
 $font-family: 'Gibson', 'sans-serif';
+$secondary-font-family: 'Gibson Light', 'sans-serif';

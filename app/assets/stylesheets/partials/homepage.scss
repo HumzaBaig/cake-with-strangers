@@ -24,7 +24,7 @@ span { color: $tertiary-font-color; }
 
 .homepage-head-main {
   font-size: 2.5em;
-  font-weight: 600;
+  font-weight: 700;
   font-family: $font-family;
   color: $primary-font-color;
   letter-spacing: 2px;
@@ -32,8 +32,7 @@ span { color: $tertiary-font-color; }
 
 .homepage-head-subtext {
   font-size: 1.125em;
-  font-weight: 400;
-  font-family: $font-family;
+  font-family: $secondary-font-family;
   color: $primary-font-color;
   letter-spacing: 1px;
 }
@@ -77,6 +76,7 @@ span { color: $tertiary-font-color; }
 
 .small-text {
   color: $tertiary-font-color;
+  letter-spacing: 1px;
   opacity: .8;
 }
 
@@ -190,6 +190,7 @@ blockquote {
   border-right: 1em solid $tertiary-color;
   border-left: 0;
   font-style: normal;
+  font-family: $secondary-font-family;
   margin: 1.625em 0;
 }
 
