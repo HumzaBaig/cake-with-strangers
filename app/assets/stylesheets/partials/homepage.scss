@@ -6,7 +6,7 @@
 span { color: $tertiary-font-color; }
 
 .homepage-pic {
-  background-image: url("http://res.cloudinary.com/dzixj0ktk/image/upload/b_rgb:f4845c,dn_150,o_55/v1481571235/cupcakes_lajcb1.jpg");
+  background-image: url("http://res.cloudinary.com/dzixj0ktk/image/upload/b_rgb:f4845c,dn_150,o_30/v1481571235/cupcakes_lajcb1.jpg");
   background-size: cover;
   background-position: 50%;
   width: 100%;
@@ -27,7 +27,7 @@ span { color: $tertiary-font-color; }
   font-weight: 600;
   font-family: $font-family;
   color: $primary-font-color;
-  text-shadow: 1px 2px 1px #a3a3a3;
+  letter-spacing: 2px;
 }
 
 .homepage-head-subtext {
@@ -35,7 +35,7 @@ span { color: $tertiary-font-color; }
   font-weight: 400;
   font-family: $font-family;
   color: $primary-font-color;
-  text-shadow: 1px 1px 1px #a3a3a3;
+  letter-spacing: 1px;
 }
 
 .colored {
