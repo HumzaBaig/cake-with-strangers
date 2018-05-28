@@ -71,6 +71,8 @@ span { color: $tertiary-font-color; }
   font-size: 1.5em;
   color: $secondary-font-color;
   font-weight: 600;
+
+  letter-spacing: 1px;
 }
 
 .small-text {
@@ -87,6 +89,7 @@ span { color: $tertiary-font-color; }
   text-align: center;
   font-size: 1em;
   line-height: 1.25;
+  letter-spacing: 1px;
 }
 
 .homepage-inner-container {
