@@ -7,8 +7,8 @@ const Homepage = () => {
       <main className="homepage-outer-container">
         <div className="homepage-pic">
           <div className="pic-text-container">
-            <span className="homepage-head-main">People can be interesting</span>
-            <span className="homepage-head-subtext">...But you don’t discover that when you’re staring at a screen.</span>
+            <span className="homepage-head-main">Everyone is interesting</span>
+            <span className="homepage-head-subtext">But you don’t discover that unless you're eating cake.</span>
           </div>
         </div>
         <section className="colored centered">
