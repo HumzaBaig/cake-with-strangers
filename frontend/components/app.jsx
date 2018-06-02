@@ -32,17 +32,11 @@ const App = ({ children }) => (
           </nav>
           <div className="ethos-rant">
             <p>
-              Eat what it eat, just be willing to pay the pay.
-              Blah blah blah blah blah blah blah blah blah blah
-              Blah blah blah blah blah blah blah blah blah blah blah
-              Blah blah blah blah blah
+              Lets Get Cake is all about making our cities feel more like neighborhoods. We're more "connected" than ever before, but we're also more alone. And all we want to do is bring people together because, well, the world is better that way.
             </p>
             <br />
             <p>
-              Blah blah blah blah blah blah blah blah blah blah
-              Blah blah blah blah blah blah blah blah blah blah blah
-              Blah blah blah blah blah blah blah blah blah
-              Blah blah blah blah blah blah blah
+              We're not doing anything groundbreaking. We're creating something that would've been incredibly unnecessary 20 years ago. But while we get busier, it's easy to forget the value of a conversation for no reason. A conversation that's intentionally unintentional.
             </p>
           </div>
         </div>
