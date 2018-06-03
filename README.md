@@ -69,3 +69,7 @@ After having implemented a live chat feature, the obvious next step is going to 
 ### Smart-Feature
 
 Through adding tags to the events, hosts, and cities tables, the web application will be able to see which tags represent you best, and recommend which events you might prefer.
+
+### Revamp Design
+
+Although this isn't a feature, and the design of the site isn't excruciatingly painful to look at, it could use a change. The goal is to create a more modern look/feel to keep up with the times and break away from the basic flat-design that mimiced TeaWithStrangers.
