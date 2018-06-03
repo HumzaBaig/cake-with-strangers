@@ -72,4 +72,4 @@ Through adding tags to the events, hosts, and cities tables, the web application
 
 ### Revamp Design
 
-Although this isn't a feature, and the design of the site isn't excruciatingly painful to look at, it could use a change. The goal is to create a more modern look/feel to keep up with the times and break away from the basic flat-design that mimiced TeaWithStrangers.
+Although this isn't a feature, and the design of the site isn't excruciatingly painful to look at, it could use a change. The goal is to create a more modern look/feel to keep up with the times and break away from the basic flat-design that mimicked TeaWithStrangers.
